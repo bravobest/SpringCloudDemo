@@ -5,12 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-/**
- * @Auther: 梦学谷
- */
+
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(basePackages= {"com.mengxuegu.springcloud"})
+@EnableFeignClients(basePackages = "com.mengxuegu.springcloud.service")
 public class ProductConsumer_80_Feign {
 
     public static void main(String[] args) {
